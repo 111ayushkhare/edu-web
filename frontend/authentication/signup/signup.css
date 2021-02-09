@@ -111,7 +111,7 @@ form .content label{
 }
 
 form .field input[type="submit"]{
-  width: 139px;
+  width: 100%;
   padding: 8px;
   margin: 8px;
   font-size: 15px;
