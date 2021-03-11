@@ -3,21 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Development</title>
+    <title>Videos | Web Development</title>
+    <link type="text/css" rel="stylesheet" href="../../style/style.css">
+    <link rel="icon" type="image/png" href="../../image/books.png">
 </head>
 <body>
-    HTML
-    CSS
-    Javascript
-    Bootstrap
-    JQuery
-    AJAX
-    Django
-    NodeJs
-    ExpressJS
-    ReactJS
-    PHP
-    Angular
-    Vue    
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#html">HTML</a>
+        <a href="#css">CSS</a>
+        <a href="#js">Javascript</a>
+        <a href="#bs">Bootstrap</a>
+        <a href="#jq">jQuery</a>
+        <a href="#ax">AJAX</a>
+        <a href="#dj">Django</a>
+        <a href="#node">Node.js</a>
+        <a href="#exp">Express.js</a>
+        <a href="#react">React.js</a>
+        <a href="#php">PHP</a>
+        <a href="#ang">Angular</a>
+        <a href="#vue">Vue</a>
+    </div>
+      
+    <span onclick="openNav()">&#9776;</span>
+      
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+    <header>
+        <img src="../../image/books.png" width=10%>
+        <h1>MyBooks</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+
+        <div class="dropdown active">
+            <button class="dropbtn">Videos</button>
+            <div class="dropdown-content">
+                <a target="_blank" href="videos/vid_programming.html">Programming</a>
+                <a target="_blank" href="videos/vid_coreCS.html">CS Core Subjects</a>
+                <a target="_blank" href="videos/vid_webDev.html">Web Development</a>
+                <a target="_blank" href="videos/vid_appDev.html">App Development</a>
+                <a target="_blank" href="videos/vid_dataScience.html">Data Science</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Books</button>
+            <div class="dropdown-content">
+                <a target="_blank" href="books/books_programming.html">Programming</a>
+                <a target="_blank" href="books/books_coreCS.html">CS Core Subjects</a>
+                <a target="_blank" href="books/books_webDev.html">Web Development</a>
+                <a target="_blank" href="books/books_appDev.html">App Development</a>
+                <a target="_blank" href="books/books_dataScience.html">Data Science</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Notes</button>
+            <div class="dropdown-content">
+                <a target="_blank" href="notes/notes_programming.html">Programming</a>
+                <a target="_blank" href="notes/notes_coreCS.html">CS Core Subjects</a>
+                <a target="_blank" href="notes/notes_webDev.html">Web Development</a>
+                <a target="_blank" href="notes/notes_appDev.html">App Development</a>
+                <a target="_blank" href="notes/notes_dataScience.html">Data Science</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Courses</button>
+            <div class="dropdown-content">
+                <a target="_blank" href="courses/course_programming.html">Programming</a>
+                <a target="_blank" href="courses/course_coreCS.html">CS Core Subjects</a>
+                <a target="_blank" href="courses/course_webDev.html">Web Development</a>
+                <a target="_blank" href="courses/course_appDev.html">App Development</a>
+                <a target="_blank" href="courses/course_dataScience.html">Data Science</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <button class="dropbtn">Assignments</button>
+            <div class="dropdown-content">
+                <a target="_blank" href="assignments/assign_programming.html">Programming</a>
+                <a target="_blank" href="assignments/assign_coreCS.html">CS Core Subjects</a>
+                <a target="_blank" href="assignments/assign_webDev.html">Web Development</a>
+                <a target="_blank" href="assignments/assign_appDev.html">App Development</a>
+                <a target="_blank" href="assignments/assign_dataScience.html">Data Science</a>
+            </div>
+        </div>
+
+        <a href="donate.html">Donate</a>
+        <a href="authentication/login/login.html">Login/Signup</a>
+        
+        <input type="text" placeholder="Search..">
+    </nav>
+
+    <main>
+        <section id="html">
+            <h2>HTML</h2>
+            <iframe src="https://youtube.com/embed/videoseries?list=PLu0W_9lII9aiXlHcLx-mDH1Qul38wD3aR" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PL6gx4Cwl9DGAKIXv8Yr6nhGJ9Vlcjyymq" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLe_7x5eaUqtWp9fvsxhC4XIkoR3n5A-sF" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </section>
+
+        <section id="css">
+            <h2>CSS</h2>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLLYz8uHU480j37APNXBdPz7YzAi4XlQUF" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/vLnPwxZdW4Y" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLu0W_9lII9agpFUAlPFe_VNSlXW5uE0YL" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </section>
+
+        <section id="js">
+            <h2>JavaScript</h2>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLS1QulWo1RIbfTjQvTdj8Y6yyq4R7g-Al" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/hBh_CC5y8-s" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/grEKMHGYyns" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </section>
+        
+        <section id="bs">
+            <h2>Bootstrap</h2>
+            <iframe src="https://www.youtube.com/embed/rfscVS0vtbw" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLwgFb6VsUj_lQTpQKDtLXKXElQychT_2j" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </section>
+
+        <section id="jq">
+            <h2>jQuery</h2>
+            <iframe src="https://www.youtube.com/embed/rfscVS0vtbw" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLwgFb6VsUj_lQTpQKDtLXKXElQychT_2j" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </section>
+
+        <section id="ax">
+            <h2>AJAX</h2>
+            <iframe src="https://www.youtube.com/embed/rfscVS0vtbw" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLwgFb6VsUj_lQTpQKDtLXKXElQychT_2j" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </section>
+
+        <section id="dj">
+            <h2>Django</h2>
+            <iframe src="https://www.youtube.com/embed/rfscVS0vtbw" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLwgFb6VsUj_lQTpQKDtLXKXElQychT_2j" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </section>
+
+        <section id="node">
+            <h2>Node.js</h2>
+            <iframe src="https://www.youtube.com/embed/rfscVS0vtbw" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLwgFb6VsUj_lQTpQKDtLXKXElQychT_2j" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </section>
+
+        <section id="exp">
+            <h2>Express.js</h2>
+            <iframe src="https://www.youtube.com/embed/rfscVS0vtbw" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLwgFb6VsUj_lQTpQKDtLXKXElQychT_2j" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </section>
+
+        <section id="react">
+            <h2>React.js</h2>
+            <iframe src="https://www.youtube.com/embed/rfscVS0vtbw" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLwgFb6VsUj_lQTpQKDtLXKXElQychT_2j" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </section>
+
+        <section id="php">
+            <h2>PHP</h2>
+            <iframe src="https://www.youtube.com/embed/rfscVS0vtbw" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLwgFb6VsUj_lQTpQKDtLXKXElQychT_2j" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </section>
+
+        <section id="ang">
+            <h2>Angular</h2>
+            <iframe src="https://www.youtube.com/embed/rfscVS0vtbw" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLwgFb6VsUj_lQTpQKDtLXKXElQychT_2j" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </section>
+
+        <section id="vue">
+            <h2>Vue</h2>
+            <iframe src="https://www.youtube.com/embed/rfscVS0vtbw" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLwgFb6VsUj_lQTpQKDtLXKXElQychT_2j" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </section>
+
+    </main>
+    <footer>
+        <a href="#">FAQ</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Refund Policy</a>
+        <a href="#">&copy; 2021 | MyBooks</a>
+    </footer>
 </body>
 </html>
