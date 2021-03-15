@@ -4,7 +4,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=S, initial-scale=1.0">
     <title>login</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../login/login.css">
+
+    <script type="text/javascript">
+        function validate()
+        {
+            var status = false
+            var email = document.getElementById("email")
+            var password = document.getElementById("password")
+            let chk1, chk2, list1, list2;
+            fetch("users.json")
+                .then(function(resp) {
+                    return resp.json();
+                })
+                .then(function(data) {
+                    list1 = data.passwords;
+                    list2 = data.emails;
+                });
+            chk1 = list1.indexOf(email)
+            chk2 = list2.indexOf(password)
+            if(chk1==chk2 && chk1!=-1 && chk2!=-1)
+            {
+                status=true;
+            }
+            console.log(list1)
+            console.log(list2)
+            return status;
+        }
+    </script>
+
   </head>
   <body>
     <div class="wrapper">
@@ -12,7 +40,7 @@
             LOGIN PAGE
         </div>
 
-        <form action="#">
+        <form onsubmit="return validate()" action="../../home.html">
             <div class="field">
                 <input type="text" required>
                 <label>Email Address</label>

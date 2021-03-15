@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyBooks | Home</title>
     <link rel="stylesheet" href="../style/style.css">
-    <link rel="icon" type="image/png" href="../image/books.png">
+    <link rel="icon" type="image/png" href="../image/books.png">    
 </head>
 <body>
     <header>
@@ -39,7 +39,7 @@
         </div>
 
         <div class="dropdown">
-            <button class="dropbtn">Notes</button>
+            <button class="dropbtn">Tutorials</button>
             <div class="dropdown-content">
                 <a target="_blank" href="notes/notes_programming.html">Programming</a>
                 <a target="_blank" href="notes/notes_coreCS.html">CS Core Subjects</a>
@@ -61,7 +61,7 @@
         </div>
         
         <div class="dropdown">
-            <button class="dropbtn">Assignments</button>
+            <button class="dropbtn">Practice</button>
             <div class="dropdown-content">
                 <a target="_blank" href="assignments/assign_programming.html">Programming</a>
                 <a target="_blank" href="assignments/assign_coreCS.html">CS Core Subjects</a>
@@ -71,31 +71,127 @@
             </div>
         </div>
 
-        <a href="donate.html">Donate</a>
+        <a target="_blank" href="donate.html">Donate</a>
         <a href="authentication/login/login.html">Login/Signup</a>
         
         <input type="text" placeholder="Search..">
     </nav>
-    <main>
+    <main>       
         <section>
             <h2>Videos</h2>
-            <video src="../video/C_Introduction.mp4" width="33%" controls poster="../image/c.png"></video>
-            <video src="../video/3.What is Digital Signal.mp4" width="33%" controls poster="../image/digital_signal.jpg"></video>
-            <video src="../video/15 variable in python.mp4" width="33%" controls poster="../image/python_variable.png"></video>      
+            <iframe src="https://youtube.com/embed/videoseries?list=PLu0W_9lII9aiXlHcLx-mDH1Qul38wD3aR" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLLYz8uHU480j37APNXBdPz7YzAi4XlQUF" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/rfscVS0vtbw" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </section>
         
         <section>
             <h2>Books</h2>
-            <a target="_blank" href="https://www.flipkart.com/introduction-to-algorithms/p/itmbd96ef4e1b1de?pid=RBKFW7FY4DGHQFPQ&lid=LSTRBKFW7FY4DGHQFPQRK6S9U&marketplace=FLIPKART&cmpid=content_regionalbooks_8003060057_u_8965229628_gmc_pla&tgi=sem,1,G,11214002,u,,,395332127672,,,,c,,,,,,,&ef_id=CjwKCAiAjeSABhAPEiwAqfxURZiBmz9Io4Mo1o2l-FzWAsAkf1LkBYfdnLLTlf4KJENIVTINQeTz6RoC45EQAvD_BwE:G:s&s_kwcid=AL!739!3!395332127672!!!u!295092701166!&gclid=CjwKCAiAjeSABhAPEiwAqfxURZiBmz9Io4Mo1o2l-FzWAsAkf1LkBYfdnLLTlf4KJENIVTINQeTz6RoC45EQAvD_BwE&gclsrc=aw.ds"><img src="../image/coreman.jpg" width="24%" height="450"></a>
-            <a target="_blank" href="https://www.amazon.in/Introduction-Machine-Learning-Python-Scientists/dp/9352134575/ref=asc_df_9352134575/?tag=googleshopdes-21&linkCode=df0&hvadid=397009686187&hvpos=&hvnetw=g&hvrand=2955840834584473999&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1007749&hvtargid=pla-406164026793&psc=1&ext_vrnc=hi"><img src="../image/ml.png" width="24%" height="450"> </a>
-            <a target="_blank" href="https://www.amazon.in/Operating-System-Concepts-Silberschatz/dp/8126554274?source=ps-sl-shoppingads-lpcontext&psc=1"><img src="../image/galvin.jpg" width="24%" height="450"></a>
+            <div class="row">                
+                <div class="sec-container">
+                    <div class="big-container">
+                        <a target="_blank" href="https://www.amazon.in/Let-Us-Authentic-PROGRAMMING-Language-dp-9389845688/dp/9389845688/ref=dp_ob_image_bk"><img src="https://images-na.ssl-images-amazon.com/images/I/41a4CcXfN4L._SX348_BO1,204,203,200_.jpg" width="100%" height="500px"></a>
+                    </div>
+                    <div class="small-container">                
+                        Let us C by Yashavant Kanetkar
+                    </div>
+                </div>
+    
+                <div class="sec-container">
+                    <div class="big-container">
+                        <a target="_blank" href="https://www.amazon.in/Head-First-Java-Kathy-Sierra/dp/0596009208?tag=hackr0df-21&geniuslink=true"><img src="https://images-na.ssl-images-amazon.com/images/I/51aHYpRqWvL._SX430_BO1,204,203,200_.jpg" width="100%" height="500px"></a>
+                    </div>
+                    <div class="small-container">                
+                        'Head First Java' by Kathy Sierra & Bert Bates
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section>
-            <h2>Assignments</h2>
-            <a target="_blank" href="../assignment/List of Practical Assignments - DSA.pdf"><img src="../image/ml_assign.jpg" width="33%" height="300"></a>
-            <a target="_blank" href="../assignment/List of Practical Assignments - DSA.pdf"><img src="../image/python_assig.png" width="33%" height="300"></a>
-            <a target="_blank" href="../assignment/List of Practical Assignments - DSA.pdf"><img src="../image/c++_assig.png" width="33%" height="300"></a>
+            <h2>Tutorials</h2>
+            <div class="row">
+                <div class="sec-container">
+                    <div class="big-container">
+                        <a target="_blank" href="https://www.geeksforgeeks.org/c-programming-language/"><img src="https://www.geeksforgeeks.org/wp-content/uploads/Clanguage-768x256.png" width="100%" height="300px"></a>
+                    </div>
+                    <div class="small-container">                
+                        geeksforgeeks: C Programming Language
+                    </div>
+                </div>
+                
+                <div class="sec-container">
+                    <div class="big-container">
+                        <a target="_blank" href="https://www.tutorialspoint.com/java/index.htm"><img src="https://www.tutorialspoint.com/java/images/java_programming.jpg" width="100%" height="300px"></a>
+                    </div>
+                    <div class="small-container">                
+                        Tutorialspoint: Learn Java Programming
+                    </div>
+                </div>
+    
+                <div class="sec-container">
+                    <div class="big-container">
+                        <a target="_blank" href="https://www.programiz.com/python-programming"><img src="https://www.programiz.com/sites/all/themes/programiz/assets/pc_logo.svg" width="100%" height="300px"></a>
+                    </div>
+                    <div class="small-container">                
+                        Programiz: Learn Python Programming
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Courses</h2>
+            <div class="row">
+                <div class="sec-container">
+                    <div class="big-container">
+                        <a target="_blank" href="https://www.udemy.com/course/c-programming-for-beginners-/"><img src="https://img-a.udemycdn.com/course/240x135/1467808_f8c0.jpg?-OPjjs6VRwFAIomjNOb410dZi3YE72Dh94gUX6Ya-Oeuh9aLaCASCZVhXP1ETHW_Ua4xcBQXJOKDTpZHE-isvsHr8N8Fo0_KEFlqV8LCA3AZa_B3clUkdMurD90" width="100%" height="300px"></a>
+                    </div>
+                    <div class="small-container">                
+                        Udemy: C Programming For Beginners - Master the C Language
+                    </div>
+                </div>
+                
+                <div class="sec-container">
+                    <div class="big-container">
+                        <a target="_blank" href="https://www.educative.io/courses/learn-cpp-from-scratch?affiliate_id=5073518643380224"><img src="https://miro.medium.com/max/700/1*RuanpjZVa-SK9I6ZNbh3zQ.png" width="100%" height="300px"></a>
+                    </div>
+                    <div class="small-container">                
+                        Educative: Learn C++ from Scratch
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Practice</h2>
+            <div class="row">
+                <div class="sec-container">
+                    <div class="big-container">
+                        <a target="_blank" href="https://www.hackerrank.com/domains/c"><img src="https://user-images.githubusercontent.com/1194257/65596422-1cef2080-df97-11e9-9abb-a225204d1805.png" width="100%" height="300px"></a>
+                    </div>
+                    <div class="small-container">                
+                        Hackerrank: Practice C
+                    </div>
+                </div>
+                
+                <div class="sec-container">
+                    <div class="big-container">
+                        <a target="_blank" href="https://www.geeksforgeeks.org/output-of-c-program-set-1/"><img src="https://www.geeksforgeeks.org/wp-content/uploads/Clanguage-768x256.png" width="100%" height="300px"></a>
+                    </div>
+                    <div class="small-container">                
+                        geeksforgeeks: Learn C++
+                    </div>
+                </div>
+    
+                <div class="sec-container">
+                    <div class="big-container">
+                        <a target="_blank" href="https://www.programiz.com/java-programming/examples"><img src="https://www.programiz.com/sites/all/themes/programiz/assets/pc_logo.svg" width="100%" height="300px"></a>
+                    </div>
+                    <div class="small-container">                
+                        Programiz: Java examples
+                    </div>
+                </div>
+            </div>
         </section>
         
         <div class="dev-section">
