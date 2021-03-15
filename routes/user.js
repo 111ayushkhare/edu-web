@@ -13,12 +13,13 @@ router.post('/signup', (req, res, next) => {
                 if (user.length >= 1) {
                     return res.status(409).json({message: 'Mail exists'});
                 } else {
-                    bcrypt.hash(req.body.email, 10, (err, hash) => {
+                    bcrypt.hash(req.body.password, 10, (err, hash) => {
                         if (err) {
                             return res.status(500).json({error: err});
                         } else {
                             const user = new User({
                                 _id: new mongoose.Types.ObjectId,
+                                name: req.body.name,
                                 email: req.body.email,
                                 password: hash
                             });
@@ -49,12 +50,14 @@ router.post('/login', (req, res, next) => {
                 });
             }
             bcrypt.compare(req.body.password, user[0].password, (err, result) => {
+                console.log(req.body.password, user[0].password);
                 if (err) {
                     console.log('f1');
                     return res.status(401).json({
                         message: 'Auth failed'
                     });
                 }
+                console.log(result);
                 if (result) {
                     console.log('s1');
                     const token = jwt.sign(
@@ -64,7 +67,7 @@ router.post('/login', (req, res, next) => {
                         }, 
                         process.env.JWT_KEY,
                         {
-                            expiresIn: "ih"
+                            expiresIn: "1h"
                         }
                     );
                     return res.status(200).json({

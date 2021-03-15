@@ -4,14 +4,30 @@ const route = require('express').Router();
 route.get('/home', (req, res) => {
     res.sendFile('/home/kitretsu/Repository/Educational Website Design/frontend/routes/home.html');
 });
+route.get('/home/home.html', (req, res) => {
+    res.sendFile('/home/kitretsu/Repository/Educational Website Design/frontend/routes/home.html');
+});
 
 // Get Athentication html files
 route.get('/home/authentication/login/login.html', (req, res) => {
     res.sendFile('/home/kitretsu/Repository/Educational Website Design/frontend/routes/authentication/login/login.html');
 });
-route.get('home/authentication/signup/signup.html', (req, res) => {
+route.get('/home/authentication/signup/signup.html', (req, res) => {
     res.sendFile('/home/kitretsu/Repository/Educational Website Design/frontend/routes/authentication/signup/signup.html');
 });
+
+// Get Athentication css files
+route.get('/home/authentication/login/login.css', (req, res) => {
+    res.sendFile('/home/kitretsu/Repository/Educational Website Design/frontend/routes/authentication/login/login.css');
+});
+route.get('/home/authentication/signup/signup.css', (req, res) => {
+    res.sendFile('/home/kitretsu/Repository/Educational Website Design/frontend/routes/authentication/signup/signup.css');
+});
+
+route.get('/home/authentication/signup/signup.js', (req, res) => {
+    res.sendFile('/home/kitretsu/Repository/Educational Website Design/frontend/routes/authentication/signup/signup.js');
+});
+
 
 // Get Videos section html files
 route.get('/home/videos/vid_appDev.html', (req, res) => {

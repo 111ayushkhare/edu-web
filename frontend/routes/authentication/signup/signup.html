@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=S, initial-scale=1.0">
     <title>signup</title>
-    <link rel="stylesheet" href="../signup/signup.css">
+    <link rel="stylesheet" href="./signup.css">
+    <script type="text/javascript" src="./signup.js"></script>  
   </head>
   <body>
     <div class="wrapper">
@@ -12,24 +13,24 @@
             SIGNUP PAGE
         </div>
 
-        <form action="#">
-            <div class="field">
+        <form method="POST" action="#" id="signupform">
+            <div id="name" class="field">
                 <input type="text" required>
                 <label>Name</label>
             </div>
 
-            <div class="field">
+            <div id="email" class="field">
                 <input type="text" required>
                 <label>Email Address</label>
             </div>
 
-            <div class="field">
+            <div id="pass" class="field">
                 <input type="password" required>
                 <label>Password</label>
             </div>
 
             <div class="field">
-                <input type="submit" value="Signup" class="login">
+                <input id="signup" type="submit" value="Signup" class="login">
             </div>
             
             <div class="signup-link">
