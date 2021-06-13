@@ -15,7 +15,8 @@ mongoose.connect(
     process.env.MONGO_ATLAS_PW + 
     '@node-shop.fefkq.mongodb.net/<dbname>?retryWrites=true&w=majority',
     {
-        useMongoClient: true
+        //useMongoClient: true,
+        useUnifiedTopology : true
     }
 );
 mongoose.Promise = global.Promise;

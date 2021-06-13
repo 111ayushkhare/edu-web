@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="/stylesheets/signup.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">
+            SIGNUP PAGE
+        </div>
+
+        <form id="signup-form">
+            <div id="name" class="field">
+                <input id="signup-name" type="text" required>
+                <label>Name</label>
+            </div>
+
+            <div id="email" class="field">
+                <input id="signup-email" type="text" required>
+                <label>Email Address</label>
+            </div>
+
+            <div id="pass" class="field">
+                <input id="signup-passwd" type="password" required>
+                <label>Password</label>
+            </div>
+
+            <div class="field">
+                <input id="signup-btn" type="submit" value="Signup" class="login">
+            </div>
+
+            <div class="signup-link">
+                Already a member? <a href="/auth/login">Login Here</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

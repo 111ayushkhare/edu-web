@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="/stylesheets/login.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">
+            LOGIN PAGE
+        </div>
+
+        <form id="#login-form" onsubmit="return validate()" action="../../home.html">
+            <div class="field">
+                <input id="login-email" type="text" required>
+                <label>Email Address</label>
+            </div>
+
+            <div class="field">
+                <input id="login-passwd" type="password" required>
+                <label>Password</label>
+            </div>
+
+            <div class="field">
+                <input id="login-btn" type="submit" value="Login" class="login">
+                <input type="submit" value="Forgot Password" class="forgot">
+            </div>
+
+            <div class="signup-link">
+                Not a member? <a href="/auth/signup">Signup now</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
