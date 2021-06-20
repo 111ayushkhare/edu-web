@@ -23,7 +23,7 @@ Then install all the required packages as mentioned in 'package.json' file.
 
 After all this, just type 
 ```
-npm start
+npm run dev
 ```
 in the terminal (Make sure there is internet connectivity otherwise this server can't connect to the mongodb atlas database).
 
@@ -82,3 +82,6 @@ edu-web
 For example, a user wants to see videos of operating system. So he/she need to head over to 'Videos' tab and select 'CS Core Subjects', a new tab will open containing top 3 recommended videos of all CS core subjects. The user need to scroll down or directly jump with the help of side naviagtion bar to his/her desired subject, i.e, here its operating system.
 
 ### Screenshots
+Home page - 
+![ss1](https://user-images.githubusercontent.com/46900324/122689281-190d3280-d23f-11eb-8ec6-8832a44372eb.png)<br /><br />
+![ss2](https://user-images.githubusercontent.com/46900324/122689300-35a96a80-d23f-11eb-8c95-fc1152e83545.png)<br /><br />

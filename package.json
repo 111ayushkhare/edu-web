@@ -5,11 +5,11 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon controller/app.js -e js,hbs"
+    "dev": "nodemon app.js -e js,hbs"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/111ayushkhare/Educational-Website-Design.git"
+    "url": "git+https://github.com/111ayushkhare/edu-web.git"
   },
   "keywords": [
     "Node.Js",
@@ -19,9 +19,9 @@
   "author": "ayush & shubham",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/111ayushkhare/Educational-Website-Design/issues"
+    "url": "https://github.com/111ayushkhare/edu-web/issues"
   },
-  "homepage": "https://github.com/111ayushkhare/Educational-Website-Design#readme",
+  "homepage": "https://github.com/111ayushkhare/edu-web#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
