@@ -10,32 +10,8 @@
 </head>
 
 <body>
-
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#dsa">Data Structure and Algorithms</a>
-        <a href="#os">Operating Systems</a>
-        <a href="#dbms">Database Management Systems</a>
-        <a href="#cn">Computer Network</a>
-        <a href="#cc">Cloud Computing</a>
-        <a href="#toc">Theory of Computation</a>
-        <a href="#cd">Compiler Design</a>
-        <a href="#coa">Computer Organizaion and Architecture</a>
-        <a href="#sd">System Design</a>
-    </div>
-
-    <span onclick="openNav()">&#9776;</span>
-
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
-
+    
+    {{> coreCsSideNav }}
     {{> header }}
 
     <main>

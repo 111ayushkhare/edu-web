@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBooks | Profile</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <link rel="icon" type="image/png" href="/images/books.png">
+</head>
+
+<body>
+    {{> header }}
+    
+    <main>
+        <section>
+
+            <h3 id="profile-name"></h3>
+            <h3 id="profile-email"></h3>
+
+            <form>
+                <div class="field">
+                    <input id="logout-btn" class="login" type="submit" value="Logout">
+                    <input id="logout-all-btn" class="forgot" type="submit" value="Logout from all devices">
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <script src="/javascript/profile.js"></script>
+    <script src="/javascript/logout.js"></script>
+
+    {{> footer }}
+</body>
+
+</html>

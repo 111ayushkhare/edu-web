@@ -11,35 +11,7 @@
 
 <body>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#html">HTML</a>
-        <a href="#css">CSS</a>
-        <a href="#js">Javascript</a>
-        <a href="#bs">Bootstrap</a>
-        <a href="#jq">jQuery</a>
-        <a href="#ax">AJAX</a>
-        <a href="#dj">Django</a>
-        <a href="#node">Node.js</a>
-        <a href="#exp">Express.js</a>
-        <a href="#react">React.js</a>
-        <a href="#php">PHP</a>
-        <a href="#ang">Angular</a>
-        <a href="#vue">Vue</a>
-    </div>
-
-    <span onclick="openNav()">&#9776;</span>
-
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
-
+    {{> webDevSideNav }}
     {{> header }}
 
     <main>

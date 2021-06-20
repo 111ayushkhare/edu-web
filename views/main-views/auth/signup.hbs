@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>signup</title>
     <link rel="stylesheet" href="/stylesheets/signup.css">
 </head>
@@ -14,24 +14,21 @@
             SIGNUP PAGE
         </div>
 
-        <form id="signup-form">
+        <form id="signup-form" name="signupform">            
             <div id="name" class="field">
-                <input id="signup-name" type="text" required>
-                <label>Name</label>
+                <input id="signup-name" name="Name" placeholder="Name" type="text" required>
             </div>
 
             <div id="email" class="field">
-                <input id="signup-email" type="text" required>
-                <label>Email Address</label>
+                <input id="signup-email" name="Mail" placeholder="Email Address" type="email" required>
             </div>
 
             <div id="pass" class="field">
-                <input id="signup-passwd" type="password" required>
-                <label>Password</label>
+                <input id="signup-passwd" name="Passwd" placeholder="Password" type="password" required>
             </div>
 
             <div class="field">
-                <input id="signup-btn" type="submit" value="Signup" class="login">
+                <input id="signup-btn" class="login" type="submit" value="SignUp">
             </div>
 
             <div class="signup-link">
@@ -39,6 +36,7 @@
             </div>
         </form>
     </div>
+    <script src="/javascript/signup.js"></script>
 </body>
 
 </html>

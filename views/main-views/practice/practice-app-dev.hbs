@@ -9,24 +9,7 @@
 </head>
 <body>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#native">Native App Development</a>
-        <a href="#hybrid">Hybrid App Development</a>
-    </div>
-      
-    <span onclick="openNav()">&#9776;</span>
-      
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-        }
-        
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
-
+    {{> appDevSideNav }}
     {{> header }}
 
     <main>

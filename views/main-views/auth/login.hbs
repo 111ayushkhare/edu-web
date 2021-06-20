@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
     <link rel="stylesheet" href="/stylesheets/login.css">
 </head>
@@ -14,20 +14,18 @@
             LOGIN PAGE
         </div>
 
-        <form id="#login-form" onsubmit="return validate()" action="../../home.html">
+        <form id="login-form" name="loginform">
             <div class="field">
-                <input id="login-email" type="text" required>
-                <label>Email Address</label>
+                <input id="login-email" name="Mail" placeholder="Email Address" type="email" required>
             </div>
 
             <div class="field">
-                <input id="login-passwd" type="password" required>
-                <label>Password</label>
+                <input id="login-passwd" name="Passwd" placeholder="Password" type="password" required>
             </div>
 
             <div class="field">
-                <input id="login-btn" type="submit" value="Login" class="login">
-                <input type="submit" value="Forgot Password" class="forgot">
+                <input id="login-btn" class="login" type="submit" value="Login">
+                <input class="forgot" type="submit" value="Forgot Password">
             </div>
 
             <div class="signup-link">
@@ -35,6 +33,7 @@
             </div>
         </form>
     </div>
+    <script src="/javascript/login.js"></script>
 </body>
 
 </html>
