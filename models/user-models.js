@@ -26,6 +26,9 @@ const userSchema =  new mongoose.Schema({
         minLength: 6,
         required: true
     },
+    rating: [{
+        type: mongoose.Schema.Types.ObjectId
+    }],
     tokens: [
         {
             token: {

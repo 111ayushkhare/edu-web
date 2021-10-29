@@ -8,6 +8,7 @@ const path = require('path');
 // Importing custom modules
 const userAuthRoutes = require('./routes/auth-api-routes');
 const staticPageRoutes = require('./routes/static-page-routes');
+const ratingRoutes = require('./routes/rating-api-routes');
 require('./models/db/mongodb-connector');
 
 // Defining path used by express
@@ -29,6 +30,7 @@ app.use(express.static(publicDirPath));
 app.use(express.json());
 app.use('/', staticPageRoutes);
 app.use('/userAuth', userAuthRoutes);
+app.use('/ratingRoute', ratingRoutes);
 
 app.listen(PORT, () => {
     console.log("Server is up and running at -> http://localhost:" + PORT);
