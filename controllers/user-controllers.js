@@ -1,5 +1,5 @@
 // Importing custom modules
-const Rating = require('../models/rating-models');
+const Rating = require('../models/book-models');
 const User = require('../models/user-models');
 
 const signup = async (req, res) => {

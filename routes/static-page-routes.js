@@ -1,6 +1,8 @@
 // Importing required npm packages
 const router = require('express').Router();
 
+const auth = require('../middleware/auth');
+
 /**
  * Route for Home Page
  */
@@ -70,7 +72,7 @@ router.get('/books/books-data-science', (req, res) => {
     res.render('./books/books-data-science');
 });
 
-router.get('/books/books-programming', (req, res) => {
+router.get('/books/books-programming', auth, (req, res) => {
     res.render('./books/books-programming');
 });
 

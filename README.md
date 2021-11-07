@@ -78,6 +78,19 @@ edu-web
     `- README.md
 ```
 
+```
+[
+    {
+      '$lookup': {
+        'from': 'users', 
+        'localField': 'ratings.person', 
+        'foreignField': '_id', 
+        'as': 'string'
+      }
+    }
+]
+```
+
 ## How to use
 For example, a user wants to see videos of operating system. So he/she need to head over to 'Videos' tab and select 'CS Core Subjects', a new tab will open containing top 3 recommended videos of all CS core subjects. The user need to scroll down or directly jump with the help of side naviagtion bar to his/her desired subject, i.e, here its operating system.
 

@@ -8,7 +8,7 @@ const processVar =  require('../../config/nodemon.json');
 
 const URL = 'mongodb+srv://edu-admin:' 
     + processVar.env.MONGO_ATLAS_DB_PASSWD 
-    + '@edu-web.w9uag.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+    + '@edu-web.w9uag.mongodb.net/myFirstDatabase?retryWrites=true&w=majority&tls=true&tlsAllowInvalidCertificates=true';
 
 const CONNECTION_PARAMS = {
     useNewUrlParser: true,

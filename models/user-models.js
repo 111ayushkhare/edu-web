@@ -27,7 +27,7 @@ const userSchema =  new mongoose.Schema({
         required: true
     },
     rating: [{
-        type: mongoose.Schema.Types.ObjectId
+        bookId:mongoose.Schema.Types.ObjectId,
     }],
     tokens: [
         {
