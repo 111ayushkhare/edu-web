@@ -152,11 +152,15 @@ const userBook = async (req, res) => {
         resultCursor.forEach((ele)=>{
             result.push(ele);
         })
-        result.forEach(data=>{
-            const x = data.book.forEach((b)=>{
-                return b.ratings?.filter((d)=>d.person===data._id)
+        result.forEach(data => {
+          const x = data.book.forEach((b) => {
+            const y = b.ratings?.filter((d) => {
+              console.log(data._id, d.person, Boolean(d.person.equals(data._id)))
+              return d.person.equals(data._id)
             })
-            // data.book.ratings = x;
+            b.ratings = y;
+          })
+          // data.book.ratings = x;
         })
         console.log(result);
         res.status(201).send(result);

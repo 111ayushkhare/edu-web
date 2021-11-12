@@ -72,7 +72,7 @@ router.get('/books/books-data-science', (req, res) => {
     res.render('./books/books-data-science');
 });
 
-router.get('/books/books-programming', auth, (req, res) => {
+router.get('/books/books-programming', (req, res) => {
     res.render('./books/books-programming');
 });
 
